@@ -20,3 +20,4 @@ ttyl,talk to you later
 np,no problem
 wtf,what the heck
 idc,I don't care
+lmao,laughing my ass off
