@@ -1,3 +1,14 @@
+/**
+ * main driver class containing methods for getting input file, creating the hashmap, and translating the abbreviated texts.
+ *
+ * CSC 1351 Lab 6
+ 7
+ * Section 002
+ *
+ * @author Beau Fontenot
+ * @since 04-05-24
+ *
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -6,6 +17,10 @@ import java.util.Scanner;
 public class TextTranslation {
 
     static Scanner in = new Scanner(System.in);
+
+    /*
+        This method takes in a fileName as a string input and outputs a scanner using the inputted fileName
+     */
     public static Scanner getInputFile(String fileName) throws FileNotFoundException
     {
         File file;
@@ -34,6 +49,7 @@ public class TextTranslation {
 
         return new Scanner(file);
     }
+
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<String, String>();
 
